@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<!-- start of head -->
+  <head>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <title> Single-use Plastic Regulations in Florida </title>
+    <!-- all the associated css styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css"/>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.css' rel='stylesheet' />
+  </head>
+<!-- end of head -->
+
+<!-- start of body -->
+  <body>
+    <!-- start of header -->
+    <header class="h" role="header">
+    <!-- left side of the navbar -->
+      <div class="navbar">
+        <a class="lo"><img src="http://www2.leoncountyfl.gov/coadmin/pio/logos/leoncounty-blue.png" class="lo-i"/>
+          <span class="lo-t">Single-use Plastic Regulations in Florida</span>
+        </a>
+      </div>
+    <!-- end, left side of the navbar -->
+    <!-- start, right side of the navbar -->
+      <nav class="nv-h"> <!-- class to define styling -->
+        <ul class="nv-h-l"> <!-- bulleted list -->
+          <li class="nv-h-l-i"><a href="" title="View the Map" class="nv-h-l-a">View the Map</a></li>
+          <li class="nv-h-l-i"><a href="" title="Get the Data" class="nv-h-l-a">Get the Data</a></li>
+          <li class="nv-h-l-i"><a href="" title="About" class="nv-h-l-a">About</a></li>
+        </ul>
+      </nav>
+    </header>
+  <!-- end of the header -->
+  <!-- start of sidebar/aside -->
+  <main>
+    <aside>
+      <!-- Regulated Item section -->
+      <fieldset class="container">
+        <label class="container-title">Filter Regulated Item</label>
+          <div class="button-body">
+            <ul class="ks-cboxtags">
+              <li><input type="checkbox" id="checkboxOne" value="Plastic Straws" checked><label for="checkboxOne">Plastic Straws</label></li>
+              <li><input type="checkbox" id="checkboxTwo" value="Plastic Bags"><label for="checkboxTwo">Plastic Bags</label></li>
+              <li><input type="checkbox" id="checkboxThree" value="EPS"><label for="checkboxThree">EPS</label></li>
+            </ul>
+          </div>
+      </fieldset>
+      <!-- Status section -->
+      <fieldset class="container">
+        <label class="container-title">Status</label>
+          <div class="button-body">
+            <ul class="ks-cboxtags">
+              <li><input type="checkbox" id="checkboxFour" value="Effective" checked><label for="checkboxFour">Effective</label></li>
+              <li><input type="checkbox" id="checkboxFive" value="Pending"><label for="checkboxFive">Pending</label></li>
+            </ul>
+          </div>
+      </fieldset>
+      <!-- Statistics section -->
+      <div class="chart-area">
+        <h6 class="container-title">Statistics</h6>
+          <div id="chart"></div>
+      </div>
+    </aside>
+  <!-- end of sidebar/aside -->
+      <!-- start of map -->
+      <div class="map-area">
+      <div id="map"></div>
+      <script src="./map.js"></script>
+    </div>
+      <!-- end of map -->
+    </main>
+  <!-- end of main -->
+<!-- end of body -->
+</body>
+</html>
